@@ -235,8 +235,8 @@ display: flex;
       background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ), url(../images/hero-image-mob-2x.jpg);
+      rgba(46, 47, 66, 0.7)),
+      url(../images/hero-image-mob-2x.jpg);
     }
   }
 .hero-title {
@@ -245,10 +245,9 @@ display: flex;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #fff;
-  padding-bottom: 72px;
+  color: #ffffff;
   max-width: 216px;
-  margin: 0 auto;
+  margin: 0 auto 72px;
 }
 .hero-btn {
   background: #4d5ae5;
@@ -305,7 +304,7 @@ display: flex;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding: 8px;
+  margin-bottom: 8px;
 }
 
 .features-list-text {
@@ -336,8 +335,7 @@ display: flex;
 .team-name-job {
   padding: 32px 0 32px;
   text-align: center;
-  margin-bottom: 8px;
-}
+  }
 .team-soc-icon {
   width: 16px;
   height: 16px;
@@ -347,12 +345,13 @@ display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  padding-top: 8px;
+  margin-top: 8px;
 }
 .team-list {
   background-color: #f4f4fd;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px;
 }
 .team-list-items {
@@ -406,6 +405,7 @@ display: flex;
 
 /*--Portfolio--*/
 .portfolio {
+  padding-top: 96px;
   padding-bottom: 96px;
 }
 .portfolio-title {
@@ -905,8 +905,7 @@ text-align:left;
 }
   .header-list {
   display: flex;
-  gap: 40px;
-  padding: 24px 0 24px; 
+  gap: 40px; 
 }
 .open-menu-btn{
   display: none;
@@ -950,13 +949,14 @@ text-align:left;
     gap: 24px;
   }
   .hero {
+    padding: 112px 0;
     background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-image-tab.jpg);
-    max-width: 738px;
+    max-width: 768px;
   }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -972,13 +972,12 @@ text-align:left;
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    padding-bottom: 36px;
+    margin-bottom: 36px;
     max-width: 496px;
   }
   .features-list {
-  gap: 24px;
-  
-}
+  gap: 72px 24px;
+  }
   .portfolio-list-items {
   width: calc((100% - 24px) / 2);
   }
